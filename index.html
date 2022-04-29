@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+  <main>
+    <!-- NavBar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="nav-brand" href="#"><img class="logo" src="images/logo.svg" alt="Logo"></a>
+        <button class="navbar-toggler" type="button"
+          data-bs-toggle="offcanvas" 
+          data-bs-target="#navbarOffcanvas"
+          aria-controls="navbarOffcanvas"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <img src="images/icon-menu.svg" alt="menus">
+        </button>
+        <div class="offcanvas offcanvas-end" id="navbarOffcanvas"
+            tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header align-items-end justify-content-end">
+              <img src="images/icon-close-menu.svg" class="close" alt="close" data-bs-dismiss="offcanvas" aria-label="Close">
+            </div>
+            <div class="offcanvas-body">          
+              <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Features<i onclick="myFunction(this)" class="fa-solid fa-angle-down"></i>
+                    </button></a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                     <li> <a class="dropdown-item" href="#"><img class="icon" src="images/icon-todo.svg" alt="todo"> Todo List</a></li>
+                      <li><a class="dropdown-item" href="#"><img class="icon" src="images/icon-calendar.svg" alt="calendar"> Calendar</a></li>
+                      <li><a class="dropdown-item" href="#"><img class="icon" src="images/icon-reminders.svg" alt="reminders"> Reminders</a></li>
+                     <li><a class="dropdown-item" href="#"><img class="icon" src="images/icon-planning.svg" alt="planning"> Planning</a></li>
+                    </ul>
+                  </li>
+      
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Company<i onclick="myFunction(this)" class="fa-solid fa-angle-down"></i>
+                   </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                     <li> <a class="dropdown-item" href="#">History</a></li>
+                      <li><a class="dropdown-item" href="#">Our Team</a></li>
+                      <li><a class="dropdown-item" href="#">Blog</a></li>
+                    </ul>
+                    </li>
+        
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Careers</a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  </ul>
+                
+                    <a class="text-center login" href="#">Login</a>
+                    <button class="btn btn-outline-success register" type="button">Register</button>
+          
+              </div>
+            </div>
+        </div>  
+      </div>
+    </nav>
+
+    <div class="container d-flex align-items-center justify-content-center">
+    <div class="row">
+    <div class="col-lg header-mobile"></div>
+    <div class="col-lg-7 mainBody text-center text-lg-start">
+      <h1 class="title"><span class="block"> Make </span>remote work</h1>
+      <p class="mainText">Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar. </p>
+
+        <button class="btn btn-primary learnMore" type="button">Learn more</button>
+
+        <div class="row footer">
+          <div class="col col-lg-2">
+            <img class="footerImage" src="images/client-databiz.svg" alt="darabiz icon">
+          </div>
+          <div class="col col-lg-2">
+            <img class="footerImage" src="images/client-audiophile.svg" alt="audio phile icon">
+          </div>
+          <div class="col col-lg-2">
+            <img class="footerImage" src="images/client-meet.svg" alt="meet icon">
+          </div>
+          <div class="col col-lg-2">
+            <img class="footerImage" src="images/client-maker.svg" alt="maker icon">
+          </div>
+        </div> 
+        </div>
+        <div class="col-lg header-desktop"></div>
+   
+      </div>
+      </div>
+  
+  </main>
+
+ 
+    
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://rebekahshaw.com" target="_blank">Rebekah Shaw</a>.
+  </div>
+</body>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="js/script.js"></script>
+</html>

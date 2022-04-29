@@ -1,0 +1,84 @@
+.header-mobile {
+    height: 400px;
+    width: 100%;
+    background-image: url("../images/image-hero-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+}
+
+.header-desktop {
+    display: none;
+    @include media-breakpoint-up(lg) {
+        display: block;
+        margin-top: 5%;
+        width: 100%;
+        height: 600px;
+        background-image: url("../images/image-hero-desktop.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.navbar {
+    margin: 3%;
+    @include media-breakpoint-up(lg) {
+        margin: 2%;
+    }
+}
+
+.nav-link {
+    @include media-breakpoint-up(lg) {
+        padding-right: 5%;
+    }
+}
+
+.login {
+    top: 5%;
+}
+
+
+.dropdown-menu {
+    border: none;
+    @include media-breakpoint-up(lg) {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}
+
+.icon {
+    width:30px;
+    height: 30px;
+    margin-right: 5%;
+    @include media-breakpoint-up(lg) {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+
+
+.navbar-nav {
+    margin: 5%;
+    @include media-breakpoint-up(lg){
+        margin: 0;
+    }
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.close{
+    right: 5%;
+    cursor: pointer;
+}

@@ -1,0 +1,17 @@
+.mainBody {
+    @include media-breakpoint-up(lg){
+    height: 600px;
+    margin-top: 10%;
+    }
+}
+.footer {
+    margin-top: 10%;
+}
+
+.footerImage {
+    width: 80%;
+    @include media-breakpoint-up(lg) {
+        width: 100%;
+    }
+}
+

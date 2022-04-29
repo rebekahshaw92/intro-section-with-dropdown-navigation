@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+$font: 'Epilogue', sans-serif;
+$almostBlack: hsl(0, 0%, 8%);
+$mediumGray: hsl(0, 0%, 41%);
+
+body {
+    font-family: $font;
+}
+
+.dropdown-item {
+    margin: 5%;
+    font-size: 24px;
+    color: $almostBlack;
+    @include media-breakpoint-up(lg) {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+.nav-link {
+    font-size: 24px;
+    color: $mediumGray;
+    @include media-breakpoint-up(lg) {
+        font-size: 18px;
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20% !important;
+
+    }
+    &:hover {
+        color: $almostBlack;
+    }
+}
+
+.navbar-nav > li{
+    //margin-left:30px;
+    @include media-breakpoint-up(lg) {
+    margin-right: 5%;
+    }
+  }
+
+.login {
+    margin: 5%;
+    font-size: 24px;
+    color: $mediumGray;;
+    @include media-breakpoint-up(lg) {
+        font-size: 18px;
+        margin-top: 3%;
+        margin: 0;
+        line-height: 40px !important;
+    }
+    &:hover {
+        color: $almostBlack !important;
+    }
+}
+
+.register {
+    border-radius: 15px;
+    border: 1px solid $almostBlack;
+    color: $almostBlack;
+    margin-left: 3%;
+    &:hover {
+        color: $almostBlack;
+        background-color: transparent;
+    }
+}
+
+.fa-angle-down {
+    padding-left: 5%;
+}
+
+.title {
+    //padding-top: 30%;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 10%;
+    @include media-breakpoint-up(lg) {
+        margin: 0;
+        margin-top: 5%;
+        font-size: 70px;
+    }
+}
+
+.block {
+    @include media-breakpoint-up(lg){
+    display: block;
+    }
+}
+
+.mainText {
+    margin: 5%;
+    color: $mediumGray;
+    font-size: 18px;
+    @include media-breakpoint-up(lg) {
+        margin-left: 0;
+        margin-right: 20%;
+    }
+}
+
+.learnMore {
+  margin: 3%;
+  border: 2px solid black;
+  background: black;
+  color: white;
+  font-size: 18px;
+  width: 175px;
+  height: 55px;
+  border-radius: 15px;
+  font-weight: 700;
+  @include media-breakpoint-up(lg) {
+      margin-left: 0;
+  }
+  &:hover {
+      color: $almostBlack;
+      background-color: transparent;
+      border-color: $almostBlack;
+  }
+
+}
